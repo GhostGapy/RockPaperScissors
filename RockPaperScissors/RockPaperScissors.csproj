@@ -83,6 +83,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="leaderboard1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leaderboard1.Designer.cs">
+      <DependentUpon>leaderboard1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leaderboard2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leaderboard2.Designer.cs">
+      <DependentUpon>leaderboard2.cs</DependentUpon>
+    </Compile>
     <Compile Include="playerVsComputer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +117,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leaderboard1.resx">
+      <DependentUpon>leaderboard1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leaderboard2.resx">
+      <DependentUpon>leaderboard2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="playerVsComputer.resx">
       <DependentUpon>playerVsComputer.cs</DependentUpon>

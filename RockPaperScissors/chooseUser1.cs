@@ -59,16 +59,7 @@ namespace RockPaperScissors
 
         private void chooseUser1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                if (MessageBox.Show("You really wanna close this game?",
-                               "Rock, Paper, Scissors",
-                                MessageBoxButtons.OKCancel,
-                                MessageBoxIcon.Information) == DialogResult.OK)
-                    Application.Exit();
-                else
-                    e.Cancel = true; // to don't close form is user change his mind
-            }
+            form1.Show();
         }
 
         private void button1_Click_2(object sender, EventArgs e)

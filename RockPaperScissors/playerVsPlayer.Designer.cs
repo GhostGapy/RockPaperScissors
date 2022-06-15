@@ -35,9 +35,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.timeLeft = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -47,6 +45,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -69,27 +73,28 @@
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.25F);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(232, 196);
+            this.label6.Location = new System.Drawing.Point(189, 310);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(192, 54);
+            this.label6.Size = new System.Drawing.Size(274, 54);
             this.label6.TabIndex = 35;
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.button2.Location = new System.Drawing.Point(268, 455);
+            this.button2.Location = new System.Drawing.Point(266, 422);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 36);
             this.button2.TabIndex = 34;
             this.button2.Text = "Stop playing";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label8.Location = new System.Drawing.Point(216, 429);
+            this.label8.Location = new System.Drawing.Point(214, 396);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(227, 23);
             this.label8.TabIndex = 33;
@@ -99,52 +104,33 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label7.Location = new System.Drawing.Point(220, 406);
+            this.label7.Location = new System.Drawing.Point(158, 373);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(223, 23);
+            this.label7.Size = new System.Drawing.Size(333, 23);
             this.label7.TabIndex = 32;
-            this.label7.Text = "uName       VS    Computer";
+            this.label7.Text = "user1            VS          user2";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timeLeft
             // 
             this.timeLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.timeLeft.Location = new System.Drawing.Point(261, 250);
+            this.timeLeft.Location = new System.Drawing.Point(259, 215);
             this.timeLeft.Name = "timeLeft";
             this.timeLeft.Size = new System.Drawing.Size(131, 23);
             this.timeLeft.TabIndex = 31;
             this.timeLeft.Text = "Seconds left: 3";
             this.timeLeft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label5.Location = new System.Drawing.Point(282, 339);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 20);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "You picked:";
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
-            this.button1.Location = new System.Drawing.Point(264, 276);
+            this.button1.Location = new System.Drawing.Point(262, 241);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 48);
             this.button1.TabIndex = 29;
             this.button1.Text = "PLAY";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label4.Location = new System.Drawing.Point(269, 365);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 20);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "SCISSORS";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox4
             // 
@@ -179,7 +165,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
-            this.label1.Location = new System.Drawing.Point(71, 59);
+            this.label1.Location = new System.Drawing.Point(71, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 26);
             this.label1.TabIndex = 23;
@@ -222,22 +208,96 @@
             // timer1
             // 
             this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
-            this.label2.Location = new System.Drawing.Point(391, 59);
+            this.label2.Location = new System.Drawing.Point(396, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(192, 26);
             this.label2.TabIndex = 37;
             this.label2.Text = "Player2 pick:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label3.Location = new System.Drawing.Point(72, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(20, 20);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "A";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label10.Location = new System.Drawing.Point(234, 143);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(20, 20);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "S";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label11.Location = new System.Drawing.Point(141, 241);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(22, 20);
+            this.label11.TabIndex = 40;
+            this.label11.Text = "D";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label12.Location = new System.Drawing.Point(387, 143);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(18, 20);
+            this.label12.TabIndex = 41;
+            this.label12.Text = "J";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.White;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label13.Location = new System.Drawing.Point(553, 143);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(20, 20);
+            this.label13.TabIndex = 42;
+            this.label13.Text = "K";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.White;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label14.Location = new System.Drawing.Point(457, 241);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(19, 20);
+            this.label14.TabIndex = 43;
+            this.label14.Text = "L";
+            // 
             // playerVsPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(661, 522);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
@@ -245,9 +305,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.timeLeft);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
@@ -258,7 +316,7 @@
             this.KeyPreview = true;
             this.Name = "playerVsPlayer";
             this.Text = "playerVsPlayer";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.playerVsComputer_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.playerVsPlayer_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.playerVsPlayer_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -279,9 +337,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label timeLeft;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -291,5 +347,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }

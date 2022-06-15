@@ -20,7 +20,7 @@ namespace RockPaperScissors
         private void play_Click(object sender, EventArgs e)
         {
             chooseUser1 nov = new chooseUser1(this);
-            nov.ShowDialog();
+            nov.Show();
 
             this.Hide();
         }
@@ -42,7 +42,23 @@ namespace RockPaperScissors
         private void button1_Click(object sender, EventArgs e)
         {
             chooseUser2 nov = new chooseUser2(this);
-            nov.ShowDialog();
+            nov.Show();
+
+            this.Hide();
+        }
+
+        private void leaderboard1_Click(object sender, EventArgs e)
+        {
+            leaderboard1 nov = new leaderboard1(this);
+            nov.Show();
+
+            this.Hide();
+        }
+
+        private void leaderboard2_Click(object sender, EventArgs e)
+        {
+            leaderboard2 nov = new leaderboard2(this);
+            nov.Show();
 
             this.Hide();
         }

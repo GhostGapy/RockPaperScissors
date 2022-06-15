@@ -70,6 +70,7 @@
             this.leaderboard1.TabIndex = 4;
             this.leaderboard1.Text = "Leaderboard";
             this.leaderboard1.UseVisualStyleBackColor = true;
+            this.leaderboard1.Click += new System.EventHandler(this.leaderboard1_Click);
             // 
             // button1
             // 
@@ -93,6 +94,7 @@
             this.leaderboard2.TabIndex = 7;
             this.leaderboard2.Text = "Leaderboard";
             this.leaderboard2.UseVisualStyleBackColor = true;
+            this.leaderboard2.Click += new System.EventHandler(this.leaderboard2_Click);
             // 
             // Form1
             // 

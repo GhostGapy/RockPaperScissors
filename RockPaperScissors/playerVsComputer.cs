@@ -288,7 +288,7 @@ namespace RockPaperScissors
                 }
 
                 label8.Text = win + "           -             " + lose;
-                score = win - lose;
+                score = Math.Abs(win - lose);
                 label9.Text = "Score: " + score.ToString();
                 button1.Enabled = true;
                 button2.Enabled = true;
@@ -372,6 +372,7 @@ namespace RockPaperScissors
                 form1.Show();
                 this.Close();
             }
+
         }
     }
 }

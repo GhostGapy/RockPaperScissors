@@ -23,6 +23,40 @@ namespace RockPaperScissors
 
             textBox1.Text = "Gapy";
             textBox2.Text = "Lojze";
+
+            highScore();
+        }
+
+        private void highScore()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection("data source = database-PC.db"))
+            {
+                conn.Open();
+
+
+                using (SQLiteCommand cmd = new SQLiteCommand(conn))
+                {
+                    cmd.CommandText = "SELECT * FROM scoreboard_PvP;";
+
+                    //cmd.ExecuteNonQuery();
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+                    int highScore = 0;
+
+                    while (reader.Read())
+                    {
+                        int bestScore = reader.GetInt32(5);
+
+                        if (highScore < bestScore)
+                        {
+                            highScore = bestScore;
+                        }
+                    }
+                    label1.Text = "Highest score is: " + highScore.ToString();
+                    cmd.Dispose();
+                }
+                conn.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -141,6 +175,11 @@ namespace RockPaperScissors
                     this.Hide();
                 }
             }
+        }
+
+        private void chooseUser2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            form1.Show();
         }
     }
 }
