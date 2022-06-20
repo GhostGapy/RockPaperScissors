@@ -125,7 +125,6 @@ namespace RockPaperScissors
                         cmd.CommandText = "SELECT * FROM scoreboard_PvC WHERE score=" + bestScore + ";";
 
                         SQLiteDataReader reader = cmd.ExecuteReader();
-
                         if (reader.Read())
                         {
                             int ID = reader.GetInt32(0);
@@ -164,6 +163,7 @@ namespace RockPaperScissors
                                 top5_user1.Text = username;
                                 top5.Text = "      " + wins + "                                     -                                     " + loses + "         ";
                             }
+                            bestScore++;
                         }
                         else
                         {

@@ -21,9 +21,6 @@ namespace RockPaperScissors
 
             form1 = form11;
 
-            textBox1.Text = "Gapy";
-            textBox2.Text = "Lojze";
-
             highScore();
         }
 

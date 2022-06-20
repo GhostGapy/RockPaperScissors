@@ -17,13 +17,17 @@ namespace RockPaperScissors
         int choose = 0;
         string user = "";
         int close = 0;
+        int userID = 0;
 
 
-        public playerVsComputer(string userName, Form1 form11)
+        public playerVsComputer(string userName, int ID, Form1 form11)
         {
             InitializeComponent();
 
             user = userName;
+            userID = ID;
+
+            highScore();
 
             label1.Text = "You are playing as: " + userName;
 
@@ -35,6 +39,37 @@ namespace RockPaperScissors
             form1 = form11;
         }
 
+        private void highScore()
+        {
+            using (SQLiteConnection conn = new SQLiteConnection("data source = database-PC.db"))
+            {
+                conn.Open();
+
+
+                using (SQLiteCommand cmd = new SQLiteCommand(conn))
+                {
+                    cmd.CommandText = "SELECT * FROM scoreboard_PvC WHERE user_id=" + userID + ";";
+
+                    //cmd.ExecuteNonQuery();
+
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+                    int highScore = 0;
+
+                    while (reader.Read())
+                    {
+                        int bestScore = reader.GetInt32(4);
+
+                        if (highScore < bestScore)
+                        {
+                            highScore = bestScore;
+                        }
+                    }
+                    label10.Text = "High score: " + highScore.ToString();
+                    cmd.Dispose();
+                }
+                conn.Close();
+            }
+        }
 
         private void playerVsComputer_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -288,7 +323,7 @@ namespace RockPaperScissors
                 }
 
                 label8.Text = win + "           -             " + lose;
-                score = Math.Abs(win - lose);
+                score = win - lose;
                 label9.Text = "Score: " + score.ToString();
                 button1.Enabled = true;
                 button2.Enabled = true;

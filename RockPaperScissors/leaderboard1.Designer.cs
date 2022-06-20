@@ -64,6 +64,14 @@
             this.top3 = new System.Windows.Forms.Label();
             this.top2 = new System.Windows.Forms.Label();
             this.top1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label01 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -80,6 +88,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label2.Location = new System.Drawing.Point(524, 499);
             this.label2.Name = "label2";
@@ -90,6 +99,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label3.Location = new System.Drawing.Point(524, 470);
             this.label3.Name = "label3";
@@ -100,6 +110,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label5.Location = new System.Drawing.Point(524, 440);
             this.label5.Name = "label5";
@@ -110,6 +121,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label6.Location = new System.Drawing.Point(524, 410);
             this.label6.Name = "label6";
@@ -120,6 +132,7 @@
             // 
             // latest5_user
             // 
+            this.latest5_user.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.latest5_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.latest5_user.Location = new System.Drawing.Point(11, 499);
             this.latest5_user.Name = "latest5_user";
@@ -130,6 +143,7 @@
             // 
             // latest4_user
             // 
+            this.latest4_user.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.latest4_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.latest4_user.Location = new System.Drawing.Point(11, 470);
             this.latest4_user.Name = "latest4_user";
@@ -140,6 +154,7 @@
             // 
             // latest3_user
             // 
+            this.latest3_user.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.latest3_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.latest3_user.Location = new System.Drawing.Point(11, 440);
             this.latest3_user.Name = "latest3_user";
@@ -150,6 +165,7 @@
             // 
             // latest2_user
             // 
+            this.latest2_user.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.latest2_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.latest2_user.Location = new System.Drawing.Point(11, 410);
             this.latest2_user.Name = "latest2_user";
@@ -160,6 +176,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label12.Location = new System.Drawing.Point(524, 380);
             this.label12.Name = "label12";
@@ -170,6 +187,7 @@
             // 
             // latest1_user
             // 
+            this.latest1_user.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.latest1_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.latest1_user.Location = new System.Drawing.Point(11, 380);
             this.latest1_user.Name = "latest1_user";
@@ -180,6 +198,7 @@
             // 
             // label15
             // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label15.Location = new System.Drawing.Point(140, 499);
             this.label15.Name = "label15";
@@ -191,6 +210,7 @@
             // 
             // label16
             // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label16.Location = new System.Drawing.Point(140, 470);
             this.label16.Name = "label16";
@@ -202,6 +222,7 @@
             // 
             // label17
             // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label17.Location = new System.Drawing.Point(140, 440);
             this.label17.Name = "label17";
@@ -213,6 +234,7 @@
             // 
             // label18
             // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label18.Location = new System.Drawing.Point(140, 410);
             this.label18.Name = "label18";
@@ -224,6 +246,7 @@
             // 
             // label19
             // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label19.Location = new System.Drawing.Point(140, 380);
             this.label19.Name = "label19";
@@ -235,6 +258,7 @@
             // 
             // label20
             // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.label20.Location = new System.Drawing.Point(276, 350);
             this.label20.Name = "label20";
@@ -245,6 +269,7 @@
             // 
             // top5_user2
             // 
+            this.top5_user2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top5_user2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top5_user2.Location = new System.Drawing.Point(527, 245);
             this.top5_user2.Name = "top5_user2";
@@ -255,6 +280,7 @@
             // 
             // top4_user2
             // 
+            this.top4_user2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top4_user2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top4_user2.Location = new System.Drawing.Point(527, 216);
             this.top4_user2.Name = "top4_user2";
@@ -265,6 +291,7 @@
             // 
             // top3_user2
             // 
+            this.top3_user2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top3_user2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top3_user2.Location = new System.Drawing.Point(527, 186);
             this.top3_user2.Name = "top3_user2";
@@ -275,6 +302,7 @@
             // 
             // top2_user2
             // 
+            this.top2_user2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top2_user2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top2_user2.Location = new System.Drawing.Point(527, 156);
             this.top2_user2.Name = "top2_user2";
@@ -285,6 +313,7 @@
             // 
             // top5_user1
             // 
+            this.top5_user1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top5_user1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top5_user1.Location = new System.Drawing.Point(14, 245);
             this.top5_user1.Name = "top5_user1";
@@ -295,6 +324,7 @@
             // 
             // top4_user1
             // 
+            this.top4_user1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top4_user1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top4_user1.Location = new System.Drawing.Point(14, 216);
             this.top4_user1.Name = "top4_user1";
@@ -305,6 +335,7 @@
             // 
             // top3_user1
             // 
+            this.top3_user1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top3_user1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top3_user1.Location = new System.Drawing.Point(14, 186);
             this.top3_user1.Name = "top3_user1";
@@ -315,6 +346,7 @@
             // 
             // top2_user1
             // 
+            this.top2_user1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top2_user1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top2_user1.Location = new System.Drawing.Point(14, 156);
             this.top2_user1.Name = "top2_user1";
@@ -325,6 +357,7 @@
             // 
             // top1_user2
             // 
+            this.top1_user2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top1_user2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top1_user2.Location = new System.Drawing.Point(527, 126);
             this.top1_user2.Name = "top1_user2";
@@ -335,6 +368,7 @@
             // 
             // top1_user1
             // 
+            this.top1_user1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top1_user1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top1_user1.Location = new System.Drawing.Point(14, 126);
             this.top1_user1.Name = "top1_user1";
@@ -345,6 +379,7 @@
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label13.Location = new System.Drawing.Point(142, 315);
             this.label13.Name = "label13";
@@ -355,6 +390,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label10.Location = new System.Drawing.Point(142, 61);
             this.label10.Name = "label10";
@@ -365,6 +401,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.label4.Location = new System.Drawing.Point(279, 96);
             this.label4.Name = "label4";
@@ -375,6 +412,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label1.Location = new System.Drawing.Point(125, 9);
@@ -385,6 +423,7 @@
             // 
             // top5
             // 
+            this.top5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top5.Location = new System.Drawing.Point(143, 245);
             this.top5.Name = "top5";
@@ -396,6 +435,7 @@
             // 
             // top4
             // 
+            this.top4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top4.Location = new System.Drawing.Point(143, 216);
             this.top4.Name = "top4";
@@ -407,6 +447,7 @@
             // 
             // top3
             // 
+            this.top3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top3.Location = new System.Drawing.Point(143, 186);
             this.top3.Name = "top3";
@@ -418,6 +459,7 @@
             // 
             // top2
             // 
+            this.top2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top2.Location = new System.Drawing.Point(143, 156);
             this.top2.Name = "top2";
@@ -429,6 +471,7 @@
             // 
             // top1
             // 
+            this.top1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.top1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.top1.Location = new System.Drawing.Point(143, 126);
             this.top1.Name = "top1";
@@ -438,11 +481,103 @@
     " 3        \r\n";
             this.top1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.Location = new System.Drawing.Point(143, 96);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 23);
+            this.label7.TabIndex = 128;
+            this.label7.Text = "score";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.Location = new System.Drawing.Point(17, 96);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(120, 23);
+            this.label8.TabIndex = 127;
+            this.label8.Text = "player username";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.Location = new System.Drawing.Point(140, 350);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(66, 23);
+            this.label9.TabIndex = 130;
+            this.label9.Text = "score";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.Location = new System.Drawing.Point(14, 350);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 23);
+            this.label11.TabIndex = 129;
+            this.label11.Text = "player username";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label14.Location = new System.Drawing.Point(449, 350);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(66, 23);
+            this.label14.TabIndex = 131;
+            this.label14.Text = "score";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label21.Location = new System.Drawing.Point(452, 96);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(66, 23);
+            this.label21.TabIndex = 132;
+            this.label21.Text = "score";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label01
+            // 
+            this.label01.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label01.BackColor = System.Drawing.Color.Transparent;
+            this.label01.Location = new System.Drawing.Point(17, 284);
+            this.label01.Name = "label01";
+            this.label01.Size = new System.Drawing.Size(634, 20);
+            this.label01.TabIndex = 0;
+            this.label01.Text = "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" +
+    " _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ";
+            this.label01.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Location = new System.Drawing.Point(14, 33);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(634, 20);
+            this.label22.TabIndex = 133;
+            this.label22.Text = "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" +
+    " _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // leaderboard1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 590);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label01);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.top5);
             this.Controls.Add(this.top4);
             this.Controls.Add(this.top3);
@@ -525,5 +660,13 @@
         private System.Windows.Forms.Label top3;
         private System.Windows.Forms.Label top2;
         private System.Windows.Forms.Label top1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label01;
+        private System.Windows.Forms.Label label22;
     }
 }

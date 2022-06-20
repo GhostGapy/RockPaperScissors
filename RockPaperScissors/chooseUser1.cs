@@ -106,7 +106,7 @@ namespace RockPaperScissors
                 }
                 else
                 {
-                    MessageBox.Show("Insert both player names!");
+                    MessageBox.Show("Insert player name!");
                     textBox1.Text = "";
                     check = 1;
                 }
@@ -114,7 +114,7 @@ namespace RockPaperScissors
 
                 if (check==0)
                 {
-                    playerVsComputer nov = new playerVsComputer(user, form1);
+                    playerVsComputer nov = new playerVsComputer(user, ID, form1);
                     nov.Show();
 
                     this.Hide(); 
